@@ -1,10 +1,10 @@
-baseURL = "https://hugo-theme-anubis2.netlify.app/"
+baseURL = "https://my-blog-htlin.netlify.app/"
 languageCode = "en-us"
 theme = "anubis2"
 title = "林協霆"
 
 [params.author]
-name = "Hsieh-Ting Ling"
+name = "Hsieh-Ting Lin"
 
 [markup.goldmark.renderer]
 unsafe = true # true | false; Enable unsafe mode to have a better experience
