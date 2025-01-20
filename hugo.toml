@@ -1,0 +1,49 @@
+baseURL = "https://hugo-theme-anubis2.netlify.app/"
+languageCode = "en-us"
+theme = "anubis2"
+title = "林協霆"
+
+[params.author]
+name = "Hsieh-Ting Ling"
+
+[markup.goldmark.renderer]
+unsafe = true # true | false; Enable unsafe mode to have a better experience
+
+[markup.highlight]
+style = 'catppuccin-mocha' # Chroma style, find more at here: https://swapoff.org/chroma/playground/
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog"
+weight = 2
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts"
+weight = 5
+
+[[menu.main]]
+identifier = "docs"
+name = "Docs"
+url = "/slides"
+weight = 3
+
+[[menu.main]]
+identifier = "showcase"
+name = "Showcase"
+url = "/showcase"
+weight = 3
+
+[[menu.main]]
+identifier = "About"
+name = "About"
+url = "about"
+weight = 9

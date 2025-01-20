@@ -1,0 +1,23 @@
+.DS_Store
+
+# Hugo Generated Files and Directories
+/public/
+/resources/
+/hugo_stats.json
+
+# Temporary files
+.DS_Store
+Thumbs.db
+
+# System Files
+*.log
+*.swp
+*.swo
+
+# Node Modules (if using npm/yarn)
+node_modules/
+
+# Optional: Ignore config-specific files
+config.toml.local
+config.yaml.local
+config.json.local
