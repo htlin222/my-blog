@@ -1,10 +1,44 @@
 baseURL = "https://my-blog-htlin.netlify.app/"
 languageCode = "en-us"
 theme = "anubis2"
-title = "林協霆"
+title = "林協霆醫師"
+
+[pagination]
+pagerSize = 5
 
 [params.author]
 name = "Hsieh-Ting Lin"
+
+[params]
+colorTheme = "auto"
+colorThemeSwitcher = true
+
+readMore = true
+readNextPosts = 2
+copyCodeButton = true
+rssAsSocialIcon = true
+locale = "en-us"
+math = false           # true: enable mathjax globally (default is false)
+toc = true
+
+
+GiscusRepo = "htlin222/my-blog"
+GiscusRepoId = "R_kgDONsq-DA"
+GiscusCategory = "General"
+GiscusCategoryId = "DIC_kwDONsq-DM4CmK0q"
+GiscusLazyLoad = true
+GiscusDataMapping = "pathname"
+GiscusLang = "zh-TW"
+GiscusTheme = "catppuccin_mocha"
+
+social = [
+  { id = "github", url = "https://github.com/htlin222" },
+  { id = "linkedin", url = "https://www.linkedin.com/in/hsiehting-lin/" },
+  { id = "email", url = "mailto:hsieh.ting.lin@gmail.com" },
+  { id = "facebook", url = "https://www.facebook.com/htlin.lizard" },
+  { id = "x", url = "https://x.com/htlin222" },
+  { id = "youtube", url = "https://www.youtube.com/@htlin.lizard" },
+]
 
 [markup.goldmark.renderer]
 unsafe = true # true | false; Enable unsafe mode to have a better experience
