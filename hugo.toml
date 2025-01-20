@@ -13,8 +13,8 @@ name = "Hsieh-Ting Lin"
 colorTheme = "auto"
 colorThemeSwitcher = true
 
-readMore = true
-readNextPosts = 2
+readMore = false
+readNextPosts = 5
 copyCodeButton = true
 rssAsSocialIcon = true
 locale = "en-us"
@@ -45,6 +45,7 @@ unsafe = true # true | false; Enable unsafe mode to have a better experience
 
 [markup.highlight]
 style = 'catppuccin-mocha' # Chroma style, find more at here: https://swapoff.org/chroma/playground/
+anchorLineNos = true
 
 [[menu.main]]
 identifier = "home"
@@ -59,21 +60,15 @@ url = "/blog"
 weight = 2
 
 [[menu.main]]
-identifier = "posts"
-name = "Posts"
-url = "/posts"
-weight = 5
-
-[[menu.main]]
-identifier = "docs"
-name = "Docs"
-url = "/slides"
-weight = 3
-
-[[menu.main]]
 identifier = "showcase"
 name = "Showcase"
 url = "/showcase"
+weight = 3
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
 weight = 3
 
 [[menu.main]]

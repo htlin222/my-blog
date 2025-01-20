@@ -2,27 +2,13 @@
 # This title is used as the og:title on Hugo's internal
 # opengraph structured data template on the home page.
 # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-title = "Hugo ʕ•ᴥ•ʔ Bear"
+title = "林協霆醫師"
 +++
 
-# A match made in heaven
+# 這裡有一些跟程式、醫學有關的文章
 
-There is a website obesity crisis. Bloated websites full of scripts, ads, and trackers are slowing your readers down every time they try to read your well-crafted content.
+歡迎光臨 🦎 林協霆醫師的個人 blog，這個網站由一名 🦀oncology+🩸hematology 肥肉的內科專科醫師維護，這裡有點雜草叢生，有很多地方都還在施工中，有亂長的藤蔓跟隨意嫁接的樹苗
 
-Hugo Bear Blog is all you need to build a fantastic and optimized site or blog. It works perfectly on **any** viewing device. All you need to focus on is writing good content.
-
-[Go to the original bear blog](https://bearblog.dev/).
-
----
-
-What happens when you combine the worlds' fastest, most lightweight static site generator with a design theme built to provide you with free, no-nonsense, super-fast blogging capabilities?
-
-**Use this theme, and find out!**
-
-Made with 💟 by [Jan Raasch](https://www.janraasch.com).
-
----
-
-Simply publish content online, grow an audience, and keep your pages tiny, fast, and **optimized for search engines**.
-
-Each page is ~5kb, and you can **host your blog yourself**.
+- 當然，你也可以來[蜥蜴花園](https://physician.tw) 看看我的文章，說不定有什麼好玩的》 🎢
+- 或[我的 Github](https://github.com/htlin222/)裡面也有一些有趣的東西
+- 也可以看看下面這篇我最近寫的文章⬇︎
