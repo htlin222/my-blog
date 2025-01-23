@@ -13,6 +13,8 @@ category: tutorial
 
 如果之前沒有跟 python 打過交道，想在 mac 上安裝 python 時，首先就會面對到：我是誰？我在哪裡的問題，因為 mac 本身自帶一個 python3，如果在終端機裡執行的話，也是可以`print("hellow world")`，接著，我們可能就會想開心地利用系統的 pip 來安裝需要的套件，然後這樣做是很危險的，因此 pip 時不時會提醒你要不要更新 pip，但 mac 系統中其實有很多套件，可能需要比較低版本的 python 才能執行，更新可能造成不可逆的崩潰，因此，另外下載一個 python 來安裝是很重要的。
 
+<!--more-->
+
 接下來就會面對另一個問題：要載哪個版本？最直覺得做法就是到[Python.org](https://www.python.org/downloads/)下載最新的版本，打開後下一步下一步安裝完成。另外也可以`brew install python3`來安裝。同時也會有人建議用 anaconda 來安裝一些必要的套件。到最後，我們的電腦裡就會充斥著各種版本的 python，大概像下面這張圖一樣：
 ![python_environment.png (492×487)](https://imgs.xkcd.com/comics/python_environment.png)
 

@@ -12,6 +12,8 @@ category: tutorial
 ## 一個指令自動生成投影片(.PPTX檔)
 最近因為常常要準備投影片上課，這種投影片主就是從教科書弄內容出來，標題加條列式為主，並不需要許多太複雜的排版，但在弄排版就很花時間(怒怒)。雖然有很多markdown自動變成投影片播放的功能，但就不能套用自己常用的樣式風格，也不容易交換檔案。發現 [What? Slides? From Markdown? | by Peter Conrad | Medium](https://stymied.medium.com/what-slides-from-markdown-5239ed31e7ac)介紹了用pandoc轉檔的方式，因此去看了官方文檔整理如下。
 
+<!--more-->
+
 ## TL;DR
 
 * 首先要下載pandoc [Pandoc - Installing pandoc](https://pandoc.org/installing.html)
