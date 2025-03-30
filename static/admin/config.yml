@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: main # Branch to update (defaults to master)
   repo: htlin222/my-blog # Your GitHub repository
+  auth_scope: repo # Optional: Request more permissions from GitHub
 
 media_folder: static/img
 public_folder: /img
