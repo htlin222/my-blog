@@ -4,7 +4,6 @@ linkTitle: "Remove API keys from git history"
 date: 2025-03-31
 template: post
 draft: false
-tags: ["tutorial", "dev"]
 author: "林協霆"
 description: " 本研究探討了開發人員在使用 Git 版本控制系統時，不慎將 API 密鑰等敏感資訊提交至程式碼倉庫的問題。研究基於實際案例分析，提出了一套有效的解決方案，包括從當前提交和歷史記錄中清除敏感資訊、防止類似問題再次發生的預防措施，以及安全最佳實踐。研究結果表明，採用適當的工具和流程可以有效降低資訊洩漏的風險和減輕潛在損害。"
 slug: "api-key-in-git"
