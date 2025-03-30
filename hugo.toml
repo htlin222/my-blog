@@ -47,6 +47,20 @@ unsafe = true # true | false; Enable unsafe mode to have a better experience
 style = 'catppuccin-mocha' # Chroma style, find more at here: https://swapoff.org/chroma/playground/
 anchorLineNos = true
 
+[outputs]
+home = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+mediatype = "application/rss+xml"
+baseName = "index"
+
+[mediaTypes]
+[mediaTypes."application/rss+xml"]
+suffixes = ["xml"]
+
+[permalinks]
+rss = "/index.xml"
+
 [[menu.main]]
 identifier = "home"
 name = "Home"
