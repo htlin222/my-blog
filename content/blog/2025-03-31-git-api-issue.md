@@ -2,6 +2,7 @@
 title: "不小心將 API 密鑰加入 Git 歷史時的處理方法"
 linkTitle: "Remove API keys from git history"
 date: 2025-03-31
+template: post
 draft: false
 tags: ["tutorial", "dev"]
 author: "林協霆"
@@ -203,7 +204,6 @@ git push --force
 
 [^1]: GitHub. (2023). "安全最佳實踐：管理敏感資訊". GitHub Docs. <https://docs.github.com/en/code-security/supply-chain-security/end-to-end-supply-chain/securing-accounts>
 
-
 [^3]: Kumar, A., et al. (2021). "大規模程式碼倉庫中的密鑰管理策略". ACM Transactions on Security, 14(2), 1-23.
 
 [^4]: Martin, R. C. (2020). "Clean Code: 敏感資訊處理的最佳實踐". IEEE Software Engineering, 37(4), 65-72.
@@ -211,5 +211,3 @@ git push --force
 [^5]: BFG Repo-Cleaner. (2023). "使用者手冊". <https://rtyley.github.io/bfg-repo-cleaner/>
 
 [^6]: Git-filter-repo. (2023). "官方文檔". <https://github.com/newren/git-filter-repo/blob/main/Documentation/git-filter-repo.txt>
-
-
