@@ -1,18 +1,18 @@
 ---
-title: "不小心將 API 密鑰加入 Git 歷史時的處理方法"
-linkTitle: "Remove API keys from git history"
-date: 2025-03-31
-template: post
 draft: false
-author: "林協霆"
-description: " 本研究探討了開發人員在使用 Git 版本控制系統時，不慎將 API 密鑰等敏感資訊提交至程式碼倉庫的問題。研究基於實際案例分析，提出了一套有效的解決方案，包括從當前提交和歷史記錄中清除敏感資訊、防止類似問題再次發生的預防措施，以及安全最佳實踐。研究結果表明，採用適當的工具和流程可以有效降低資訊洩漏的風險和減輕潛在損害。"
-slug: "api-key-in-git"
+author: 林協霆
+slug: api-key-in-git
+date: 2025-03-31
 isCJKLanguage: true
+title: 不小心將 API 密鑰加入 Git 歷史時的處理方法
+template: post
+description: " 本研究探討了開發人員在使用 Git 版本控制系統時，不慎將 API
+  密鑰等敏感資訊提交至程式碼倉庫的問題。研究基於實際案例分析，提出了一套有效的解決方案，包括從當前提交和歷史記錄中清除敏感資訊、防止類似問題再次發生的預防措\
+  施，以及安全最佳實踐。研究結果表明，採用適當的工具和流程可以有效降低資訊洩漏的風險和減輕潛在損害。"
+linkTitle: Remove API keys from git history
 aliases:
-  - "/git-apikey/"
+  - /git-apikey/
 ---
-
-
 # 不小心將 API 密鑰加入 Git 歷史時的處理方法
 
 ## 摘要
@@ -34,24 +34,24 @@ aliases:
 
 我們評估了這些工具在以下幾個方面的表現：
 
-- 清除效率
-- 使用複雜度
-- 對倉庫完整性的影響
-- 適用場景
+* 清除效率
+* 使用複雜度
+* 對倉庫完整性的影響
+* 適用場景
 
 ## 研究結果
 
 ### 1. 敏感資訊洩漏的主要原因
 
-- 直接在程式碼中硬編碼 API 密鑰（67%）
-- 忘記將含有敏感資訊的配置文件加入.gitignore（28%）
-- 在 commit 訊息中包含敏感資訊（5%）
+* 直接在程式碼中硬編碼 API 密鑰（67%）
+* 忘記將含有敏感資訊的配置文件加入.gitignore（28%）
+* 在 commit 訊息中包含敏感資訊（5%）
 
 ### 2. 清除敏感資訊的有效方法
 
-- **git-filter-repo**：在所有測試場景中表現最佳，處理大型倉庫的效率比 git filter-branch 高出約 300%[^6]。
-- **BFG Repo-Cleaner**：使用簡單，對於特定類型文件的處理特別有效[^5]。
-- **git filter-branch**：雖然是內建工具，但處理速度較慢，且在複雜倉庫中可能產生問題。
+* **git-filter-repo**：在所有測試場景中表現最佳，處理大型倉庫的效率比 git filter-branch 高出約 300%[^6]。
+* **BFG Repo-Cleaner**：使用簡單，對於特定類型文件的處理特別有效[^5]。
+* **git filter-branch**：雖然是內建工具，但處理速度較慢，且在複雜倉庫中可能產生問題。
 
 #### BFG Repo-Cleaner 詳解
 
@@ -70,11 +70,11 @@ BFG 是一個 Java 應用程式，需要 Java 運行環境（Java 8 或更高版
    # 執行
    java -jar bfg-1.14.0.jar 【選項】
    ```
-
 2. **使用套件管理器**
-   - macOS: `brew install bfg`
-   - Ubuntu/Debian: `sudo apt-get install bfg`
-   - Windows (Scoop): `scoop install bfg`
+
+   * macOS: `brew install bfg`
+   * Ubuntu/Debian: `sudo apt-get install bfg`
+   * Windows (Scoop): `scoop install bfg`
 
 ##### BFG 工作原理
 
@@ -124,7 +124,6 @@ git push --force
    git add 問題文件
    git commit --amend --no-edit
    ```
-
 2. **從 Git 歷史中徹底清除敏感資訊**：
 
    ```bash
@@ -136,7 +135,6 @@ git push --force
    ```bash
    java -jar bfg-1.14.0.jar --replace-text 敏感內容列表.txt
    ```
-
 3. **強制推送更新**：
 
    ```bash
@@ -147,10 +145,10 @@ git push --force
 
 實驗結果顯示，以下預防措施可顯著降低敏感資訊洩漏的風險：
 
-- **使用環境變數**：降低風險約 85%[^3]
-- **採用加密的密鑰管理服務**：降低風險約 92%[^3]
-- **配置 pre-commit hooks**：降低風險約 78%[^4]
-- **定期安全掃描**：可發現約 70%的潛在洩漏[^1]
+* **使用環境變數**：降低風險約 85%[^3]
+* **採用加密的密鑰管理服務**：降低風險約 92%[^3]
+* **配置 pre-commit hooks**：降低風險約 78%[^4]
+* **定期安全掃描**：可發現約 70%的潛在洩漏[^1]
 
 ## 討論
 
@@ -168,13 +166,13 @@ git push --force
 
 實驗證明，BFG Repo-Cleaner 相較於傳統的 git filter-branch 有顯著優勢：
 
-| 特性 | BFG Repo-Cleaner | git filter-branch |
-|------|-----------------|------------------|
-| 速度 | 非常快，大型倉庫處理可提升 10-720 倍 | 相對緩慢，特別是對大型倉庫 |
-| 易用性 | 命令簡潔，選項直觀 | 複雜的 shell 腳本，學習曲線陡峭 |
-| 記憶體使用 | 高效記憶體管理，大型倉庫也能處理 | 可能出現記憶體溢出問題 |
-| 安全性 | 預設保護最新提交，防止意外破壞 | 沒有內建安全措施 |
-| 維護狀態 | 積極維護，定期更新 | Git 核心功能，但官方建議使用替代品 |
+| 特性    | BFG Repo-Cleaner       | git filter-branch   |
+| ----- | ---------------------- | ------------------- |
+| 速度    | 非常快，大型倉庫處理可提升 10-720 倍 | 相對緩慢，特別是對大型倉庫       |
+| 易用性   | 命令簡潔，選項直觀              | 複雜的 shell 腳本，學習曲線陡峭 |
+| 記憶體使用 | 高效記憶體管理，大型倉庫也能處理       | 可能出現記憶體溢出問題         |
+| 安全性   | 預設保護最新提交，防止意外破壞        | 沒有內建安全措施            |
+| 維護狀態  | 積極維護，定期更新              | Git 核心功能，但官方建議使用替代品 |
 
 然而，研究也發現 BFG 有一些限制：
 
