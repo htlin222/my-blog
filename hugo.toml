@@ -1,4 +1,4 @@
-baseURL = "https://my-blog-htlin.netlify.app/"
+baseURL = "https://htl.physician.tw/"
 languageCode = "en-us"
 theme = "anubis2"
 title = "林協霆醫師"
