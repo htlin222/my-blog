@@ -20,7 +20,7 @@ rssAsSocialIcon = true
 locale = "en-us"
 math = false           # true: enable mathjax globally (default is false)
 toc = true
-
+mainSections = ["blog", "posts"]
 
 GiscusRepo = "htlin222/my-blog"
 GiscusRepoId = "R_kgDONsq-DA"

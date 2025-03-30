@@ -2,12 +2,12 @@
 draft: false
 author: 林協霆
 slug: api-key-in-git
-date: 2025-03-31
+date: 2025-03-30
 isCJKLanguage: true
 title: 不小心將 API 密鑰加入 Git 歷史時的處理方法
 template: post
 description: " 本研究探討了開發人員在使用 Git 版本控制系統時，不慎將 API
-  密鑰等敏感資訊提交至程式碼倉庫的問題。研究基於實際案例分析，提出了一套有效的解決方案，包括從當前提交和歷史記錄中清除敏感資訊、防止類似問題再次發生的預防措\
+  密鑰等敏感資訊提交至程式碼倉庫的問題。研究基於實際案例分析，提出了一套有效的解決方案，包括從當前提交和歷史記錄中清除敏感資訊、防止類似問題再次發生的預防措、
   施，以及安全最佳實踐。研究結果表明，採用適當的工具和流程可以有效降低資訊洩漏的風險和減輕潛在損害。"
 linkTitle: Remove API keys from git history
 aliases:
@@ -70,6 +70,7 @@ BFG 是一個 Java 應用程式，需要 Java 運行環境（Java 8 或更高版
    # 執行
    java -jar bfg-1.14.0.jar 【選項】
    ```
+
 2. **使用套件管理器**
 
    * macOS: `brew install bfg`
@@ -124,6 +125,7 @@ git push --force
    git add 問題文件
    git commit --amend --no-edit
    ```
+
 2. **從 Git 歷史中徹底清除敏感資訊**：
 
    ```bash
@@ -135,6 +137,7 @@ git push --force
    ```bash
    java -jar bfg-1.14.0.jar --replace-text 敏感內容列表.txt
    ```
+
 3. **強制推送更新**：
 
    ```bash
