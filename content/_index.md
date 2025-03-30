@@ -11,4 +11,5 @@ title = "林協霆醫師"
 
 - 當然，你也可以來[蜥蜴花園](https://physician.tw) 看看我的文章，說不定有什麼好玩的》 🎢
 - 或[我的 Github](https://github.com/htlin222/)裡面也有一些有趣的東西
-- 也可以看看下面這篇我最近寫的文章⬇︎
+- 訂閱 [RSS feed](https://htl.physician.tw/index.xml) 獲取最新文章更新
+- 也可以看看下面這些我最近寫的文章⬇︎
