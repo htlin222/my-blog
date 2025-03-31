@@ -1,5 +1,5 @@
 baseURL = "https://htl.physician.tw/"
-languageCode = "en-us"
+languageCode = "zh-tw"
 theme = "anubis2"
 title = "林協霆醫師"
 
@@ -14,11 +14,11 @@ colorTheme = "auto"
 colorThemeSwitcher = true
 
 readMore = false
-readNextPosts = 5
+readNextPosts = 3
 copyCodeButton = true
 rssAsSocialIcon = true
 locale = "en-us"
-math = false           # true: enable mathjax globally (default is false)
+math = false                     # true: enable mathjax globally (default is false)
 toc = true
 mainSections = ["blog", "posts"]
 
@@ -74,8 +74,8 @@ url = "/blog"
 weight = 2
 
 [[menu.main]]
-identifier = "showcase"
-name = "Showcase"
+identifier = "portfolio"
+name = "Portfolio"
 url = "/showcase"
 weight = 3
 
@@ -83,7 +83,7 @@ weight = 3
 identifier = "tags"
 name = "Tags"
 url = "/tags/"
-weight = 3
+weight = 4
 
 [[menu.main]]
 identifier = "About"
